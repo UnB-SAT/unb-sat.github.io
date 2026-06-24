@@ -37,10 +37,11 @@ Grouped by research line. Co-authors who are or were our students are shown in
 - **D. A. da Silva Santos**, B. C. Ribas. *Maratona Linux: a tale of upgrading from Ubuntu 20.04 to 22.04*. arXiv, 2025. [arXiv:2510.15263](https://arxiv.org/abs/2510.15263).
 
 #### Applied AI & Optimization
+- **M. A. de Souza Filho**, B. C. Ribas. *LGPD Benchmark: A Legal Text Corpus for Evaluating Personal Data Pseudonymization in Brazilian Portuguese*. Preprint, Research Square, 2025. [DOI](https://doi.org/10.21203/rs.3.rs-8309951/v1).
 - **M. A. de Souza Filho**, B. C. Ribas. *Pseudonymization in Legal Texts According to the LGPD: A Named Entity Recognition Approach*. BRACIS, 2024. [DBLP](https://dblp.org/rec/conf/bracis/AnselmoR24.html).
 - J. P. Martins, B. C. Ribas. *A randomized heuristic repair for the multidimensional knapsack problem*. Optimization Letters, 2021. [DOI](https://doi.org/10.1007/s11590-020-01611-1).
 
-<details>
+<details markdown="1">
 <summary>Earlier work (UFPR: logic, free software and grid computing)</summary>
 
 - B. C. Ribas, F. Silva. *Representação de Conhecimento Usando Fórmulas Lógicas Proposicionais em NNF*. EVINCI, 2006.
