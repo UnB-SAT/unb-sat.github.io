@@ -32,9 +32,9 @@ Grouped by research line. Co-authors who are or were our students are shown in
 - R. A. N. R. Montaño, B. C. Ribas. *Planning as Mixed-Horn Formulas Satisfiability*. ENIAC, 2017. [ResearchGate](https://www.researchgate.net/publication/320270866_Planning_as_Mixed-Horn_Formulas_Satisfiability).
 
 #### CD-MOJ & Competitive Programming
-- B. C. Ribas, **W. B. Morais**. *Maratona-Linux: um ambiente para a Maratona de Programação*. Computer on the Beach, 2019. [ResearchGate](https://www.researchgate.net/publication/332247662_Maratona-Linux_um_ambiente_para_a_Maratona_de_Programacao).
-- **L. G. Caldas**, B. C. Ribas. *Multi-Queue Scheduler for the CD-MOJ Platform*. ERAD-CO, 2024. [DOI](https://doi.org/10.5753/eradco.2024.4385).
 - **D. A. da Silva Santos**, B. C. Ribas. *Maratona Linux: a tale of upgrading from Ubuntu 20.04 to 22.04*. arXiv, 2025. [arXiv:2510.15263](https://arxiv.org/abs/2510.15263).
+- **L. G. Caldas**, B. C. Ribas. *Multi-Queue Scheduler for the CD-MOJ Platform*. ERAD-CO, 2024. [DOI](https://doi.org/10.5753/eradco.2024.4385).
+- B. C. Ribas, **W. B. Morais**. *Maratona-Linux: um ambiente para a Maratona de Programação*. Computer on the Beach, 2019. [ResearchGate](https://www.researchgate.net/publication/332247662_Maratona-Linux_um_ambiente_para_a_Maratona_de_Programacao).
 
 #### Applied AI & Optimization
 - **M. A. de Souza Filho**, B. C. Ribas. *LGPD Benchmark: A Legal Text Corpus for Evaluating Personal Data Pseudonymization in Brazilian Portuguese*. Preprint, Research Square, 2025. [DOI](https://doi.org/10.21203/rs.3.rs-8309951/v1).
