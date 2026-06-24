@@ -11,6 +11,15 @@ plugins:
 color_scheme: light
 search_enabled: true
 
+# Repo-only docs: kept in the repository for anyone who clones it, but not built into
+# the site (no page, no nav entry, no search result).
+exclude:
+  - CLAUDE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
 aux_links:
   "Organization": "https://github.com/UnB-SAT"
   "CD-MOJ": "https://cd-moj.github.io/cd-moj.docs/"
