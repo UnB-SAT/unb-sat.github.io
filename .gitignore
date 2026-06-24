@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+
+# Jekyll local build
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# OS / editor
+.DS_Store
+*.swp

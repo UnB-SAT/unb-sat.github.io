@@ -1,62 +1,57 @@
 # CLAUDE.md: unb-sat.github.io
 
-The UnB-SAT group website: a multi-page [just-the-docs](https://just-the-docs.com)
-site published with GitHub Pages at <https://unb-sat.github.io>.
+The UnB-SAT group website **and** the single source of truth for the group's people
+and advised work. Multi-page [just-the-docs](https://just-the-docs.com) site on GitHub
+Pages at <https://unb-sat.github.io>. It builds itself (no cross-repo steps).
 
-The data and the generator live in the sibling repo **`UnB-SAT/.github`**
-(`data/students.yml` + `scripts/build_profile.py`). See that repo's `CLAUDE.md` for
-the full picture. This file covers the website side.
+## Source of truth and generation
 
-## Generated vs hand-maintained
+- `data/students.yml` is the only place to edit people and advised work (field docs at
+  the top of that file).
+- `scripts/build_profile.py` rewrites the content between `<!-- AUTOGEN:* -->` markers.
+  It globs `*.md` in the repo root and fills each page's declared markers:
+  - `PEOPLE` -> `people.md` (PI card + student grid)
+  - `ONGOING` + `THESES` -> `theses.md` (current, then completed)
+  - `IC` -> `research.md` (Iniciação Científica)
+- Static pages, edit by hand: `index.md` (home + logo banner), `publications.md`,
+  `teaching.md`. New publications go in `publications.md`, newest-first within each
+  section.
 
-Do NOT hand-edit content between `<!-- AUTOGEN:* -->` markers; it is overwritten on
-the next build:
+## Update flow
 
-- `people.md`   ← `PEOPLE` (PI + student grid)
-- `theses.md`   ← `ONGOING` (current) + `THESES` (completed)
-- `research.md` ← `IC` (Iniciação Científica)
+1. Edit `data/students.yml`. Use `status: ongoing` for work in progress; IC entries
+   set `program: PIBIC` or `PIBITI`. Theme is `sat | planning | moj | ai`.
+2. `pip install pyyaml` (once), then `python3 scripts/build_profile.py`.
+3. Commit `data/students.yml` and the regenerated pages, then push.
 
-Edit by hand (these are static):
+`.github/workflows/build.yml` also rebuilds on any push that changes `data/` or
+`scripts/` (and on demand). It triggers only on those paths, so the bot's page commit
+never re-triggers it. Verify sync: `python3 scripts/build_profile.py --check`.
 
-- `index.md` (home, with the logo banner)
-- `publications.md` (**new papers go here**)
-- `teaching.md` (FLIA)
-- `_config.yml`, `assets/` (logo etc.)
+## The other repo
 
-## How it updates
-
-- `.github/workflows/build.yml` checks out `UnB-SAT/.github`, runs the generator with
-  `UNB_SAT_SITE_DIR=$GITHUB_WORKSPACE`, and commits the regenerated pages. Triggers:
-  a daily schedule, manual run (Actions tab), and `repository_dispatch` (type
-  `rebuild`) sent by the `.github` repo when its data changes.
-- So to change people / theses / IC: edit `data/students.yml` in `UnB-SAT/.github` and
-  push there; this site rebuilds itself.
-- To build locally: clone both repos side by side and run
-  `python3 scripts/build_profile.py` from the `.github` repo (it writes
-  `../unb-sat.github.io/...`).
+<https://github.com/UnB-SAT/.github> is the **static** organization profile (PI card
+plus a link to this site). It has no data or generator; if the PI card or the site
+link changes, update it there by hand.
 
 ## Conventions (keep these)
 
-- Body text in **English**; **no em dash (`—`)**; few emojis.
-- Each page has just-the-docs front matter (`title`, `nav_order`) and, where useful, a
-  table of contents:
-
-  ```
-  ## Table of contents
-  {: .no_toc .text-delta }
-
-  1. TOC
-  {:toc}
-  ```
-
+- Body text in English; **no em dash (`—`)**; few emojis.
+- Pages use just-the-docs front matter (`title`, `nav_order`) and, where useful, a
+  `{:toc}` block (`## Table of contents` + `{: .no_toc .text-delta }` + `1. TOC` +
+  `{:toc}`).
 - Markdown inside `<details>` needs `markdown="1"` (kramdown does not parse it
   otherwise), e.g. the "Earlier work" block in `publications.md`.
-- The site-wide footer (lab-status disclaimer + credit) is `footer_content` in
-  `_config.yml`.
-- The logo is `assets/logo.png` (the organization avatar), shown as the sidebar logo
-  (`logo:` in `_config.yml`) and as a banner in `index.md`.
+- Avatars are square (`github` handle -> real avatar, empty -> ui-avatars initials).
+  Confirm a handle exists: `curl -sI https://github.com/<handle>.png`.
+- `_config.yml` excludes `CLAUDE.md`, `README.md`, `data/` and `scripts/` from the
+  build, and sets the footer disclaimer (`footer_content`) and the sidebar `logo`.
 
-## GitHub Pages
+## Data sources (when adding entries)
 
-Settings → Pages → Deploy from a branch → `main` / root. The just-the-docs theme is a
-`remote_theme` in `_config.yml`.
+- TCCs: BDM, `https://bdm.unb.br/browse?type=advisor&value=Ribas%2C+Bruno+C%C3%A9sar`
+  (incomplete TLS chain; fetch with `curl -k`).
+- M.Sc.: `https://repositorio.unb.br/browse?type=advisor&value=Ribas%2C+Bruno+C%C3%A9sar`.
+- Publications: DBLP `https://dblp.org/pid/121/4222` (Scholar and ResearchGate block
+  scraping). Lattes XML at `/home/ribas/UnB-SAT/lattes.xml` (ISO-8859-1) lists IC/PIBIC
+  advisings and Brazilian-venue papers.

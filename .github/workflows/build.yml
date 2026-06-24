@@ -1,61 +1,43 @@
-name: Build site from UnB-SAT/.github
+name: Build pages from data
 
-# Regenerates index.md from the data + generator in the UnB-SAT/.github repo, then
-# commits it here so GitHub Pages republishes. No secrets needed: the default token
-# can read the public .github repo and write to this repo.
-#
-# Triggers:
-#   - workflow_dispatch: run it by hand from the Actions tab after editing the data
-#   - schedule: a daily safety net
-#   - repository_dispatch (type: rebuild): optional instant trigger; to use it, have
-#     the .github repo send a dispatch with a PAT (otherwise ignore it)
+# Regenerates the People / Theses / Iniciação Científica pages from
+# data/students.yml and commits them. It triggers only on changes to the data or
+# the generator (not on the generated pages), so the bot's own commit never
+# re-triggers it. Also runnable on demand from the Actions tab.
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - data/students.yml
+      - scripts/build_profile.py
   workflow_dispatch:
-  repository_dispatch:
-    types: [rebuild]
-  schedule:
-    - cron: "17 6 * * *"
 
 permissions:
   contents: write
 
 concurrency:
-  group: build-site
+  group: build-pages
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout site (this repo)
-        uses: actions/checkout@v4
-
-      - name: Checkout data + generator (UnB-SAT/.github)
-        uses: actions/checkout@v4
-        with:
-          repository: UnB-SAT/.github
-          path: _src
-
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-
       - run: pip install pyyaml
-
-      - name: Generate index.md
-        env:
-          UNB_SAT_SITE_DIR: ${{ github.workspace }}
-        run: python3 _src/scripts/build_profile.py
-
-      - name: Commit and push if changed
+      - run: python3 scripts/build_profile.py
+      - name: Commit regenerated pages
         run: |
           if [ -n "$(git status --porcelain '*.md')" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add '*.md'
-            git commit -m "Rebuild site from UnB-SAT/.github"
+            git commit -m "Rebuild pages from data/students.yml"
             git push
           else
-            echo "Site pages are already up to date."
+            echo "Pages already up to date."
           fi

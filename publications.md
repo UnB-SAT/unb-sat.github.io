@@ -21,7 +21,7 @@ Grouped by research line. Co-authors who are or were our students are shown in
 [DBLP](https://dblp.org/pid/121/4222).
 
 #### SAT & Pseudo-Boolean
-- **G. Tiveron**, B. C. Ribas. *A Pseudo-Boolean Formulation for Graph Database Queries*. FLAIRS, 2026. [DOI](https://doi.org/10.32473/flairs.39.1.141833).
+- **G. Tiveron**, B. C. Ribas. *A Pseudo-Boolean Formulation for Graph Database Queries*. FLAIRS, 2026. [DOI](https://doi.org/10.32473/flairs.39.1.141833), [supplementary material](https://github.com/UnB-SAT/pb-graph-query).
 - B. C. Ribas, M. A. Castilho, F. Silva, R. M. Suguimoto, R. A. N. R. Montaño. *PBFVMC: A New Pseudo-Boolean Formulation to Virtual-Machine Consolidation*. BRACIS, 2013. [DOI](https://doi.org/10.1109/BRACIS.2013.41), [preprint](https://www.brunoribas.com.br/publicacoes/files/bracis-2013-pbfvmc.pdf).
 - B. C. Ribas, R. M. Suguimoto, R. A. N. R. Montaño, F. Silva, L. C. E. de Bona, M. A. Castilho. *On Modelling Virtual Machine Consolidation to Pseudo-Boolean Constraints*. IBERAMIA, 2012. [DOI](https://doi.org/10.1007/978-3-642-34654-5_37), [preprint](https://www.brunoribas.com.br/publicacoes/files/iberamia-2012-consolidation.pdf).
 - R. Tavares de Oliveira, F. Silva, B. C. Ribas, M. A. Castilho. *On Modeling Connectedness in Reductions from Graph Problems to Extended Satisfiability*. IBERAMIA, 2012. [DBLP](https://dblp.org/rec/conf/iberamia/OliveiraSRC12.html).
@@ -32,9 +32,9 @@ Grouped by research line. Co-authors who are or were our students are shown in
 - R. A. N. R. Montaño, B. C. Ribas. *Planning as Mixed-Horn Formulas Satisfiability*. ENIAC, 2017. [ResearchGate](https://www.researchgate.net/publication/320270866_Planning_as_Mixed-Horn_Formulas_Satisfiability).
 
 #### CD-MOJ & Competitive Programming
-- **D. A. da Silva Santos**, B. C. Ribas. *Maratona Linux: a tale of upgrading from Ubuntu 20.04 to 22.04*. arXiv, 2025. [arXiv:2510.15263](https://arxiv.org/abs/2510.15263).
+- **D. A. da Silva Santos**, B. C. Ribas. *Maratona Linux: a tale of upgrading from Ubuntu 20.04 to 22.04*. arXiv, 2025. [arXiv:2510.15263](https://arxiv.org/abs/2510.15263), [code](https://github.com/maratona-linux).
 - **L. G. Caldas**, B. C. Ribas. *Multi-Queue Scheduler for the CD-MOJ Platform*. ERAD-CO, 2024. [DOI](https://doi.org/10.5753/eradco.2024.4385).
-- B. C. Ribas, **W. B. Morais**. *Maratona-Linux: um ambiente para a Maratona de Programação*. Computer on the Beach, 2019. [ResearchGate](https://www.researchgate.net/publication/332247662_Maratona-Linux_um_ambiente_para_a_Maratona_de_Programacao).
+- B. C. Ribas, **W. B. Morais**. *Maratona-Linux: um ambiente para a Maratona de Programação*. Computer on the Beach, 2019. [ResearchGate](https://www.researchgate.net/publication/332247662_Maratona-Linux_um_ambiente_para_a_Maratona_de_Programacao), [code](https://github.com/maratona-linux).
 
 #### Applied AI & Optimization
 - **M. A. de Souza Filho**, B. C. Ribas. *LGPD Benchmark: A Legal Text Corpus for Evaluating Personal Data Pseudonymization in Brazilian Portuguese*. Preprint, Research Square, 2025. [DOI](https://doi.org/10.21203/rs.3.rs-8309951/v1).
