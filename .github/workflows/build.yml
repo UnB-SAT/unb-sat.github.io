@@ -1,0 +1,61 @@
+name: Build site from UnB-SAT/.github
+
+# Regenerates index.md from the data + generator in the UnB-SAT/.github repo, then
+# commits it here so GitHub Pages republishes. No secrets needed: the default token
+# can read the public .github repo and write to this repo.
+#
+# Triggers:
+#   - workflow_dispatch: run it by hand from the Actions tab after editing the data
+#   - schedule: a daily safety net
+#   - repository_dispatch (type: rebuild): optional instant trigger; to use it, have
+#     the .github repo send a dispatch with a PAT (otherwise ignore it)
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [rebuild]
+  schedule:
+    - cron: "17 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-site
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site (this repo)
+        uses: actions/checkout@v4
+
+      - name: Checkout data + generator (UnB-SAT/.github)
+        uses: actions/checkout@v4
+        with:
+          repository: UnB-SAT/.github
+          path: _src
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - run: pip install pyyaml
+
+      - name: Generate index.md
+        env:
+          UNB_SAT_SITE_DIR: ${{ github.workspace }}
+        run: python3 _src/scripts/build_profile.py
+
+      - name: Commit and push if changed
+        run: |
+          if [ -n "$(git status --porcelain index.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add index.md
+            git commit -m "Rebuild site from UnB-SAT/.github"
+            git push
+          else
+            echo "index.md is already up to date."
+          fi
