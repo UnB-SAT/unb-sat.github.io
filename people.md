@@ -96,3 +96,7 @@ nav_order: 2
   </tr>
 </table>
 <!-- AUTOGEN:PEOPLE:END -->
+
+---
+
+The team is generated from [`data/students.yml`](https://github.com/UnB-SAT/.github/blob/main/data/students.yml) in the `UnB-SAT/.github` repository; run `scripts/build_profile.py` to update.

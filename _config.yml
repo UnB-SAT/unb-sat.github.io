@@ -2,6 +2,7 @@ title: UnB-SAT
 description: "Satisfiability and Automated Planning group · Universidade de Brasília"
 url: "https://unb-sat.github.io"
 lang: en
+logo: "/assets/logo.png"
 
 remote_theme: just-the-docs/just-the-docs
 plugins:

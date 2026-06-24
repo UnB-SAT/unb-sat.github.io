@@ -3,6 +3,8 @@ title: Home
 nav_order: 1
 ---
 
+<p align="center"><img src="/assets/logo.png" alt="UnB-SAT logo" width="170"></p>
+
 # UnB-SAT
 {: .no_toc }
 
