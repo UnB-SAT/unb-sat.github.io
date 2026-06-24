@@ -11,6 +11,7 @@
 #    github    : GitHub *handle* only, e.g. "bcribas"  (drives the avatar)
 #    lattes    : full Lattes URL,  e.g. "http://lattes.cnpq.br/0000000000000000"
 #    linkedin  : full LinkedIn URL
+#    orcid     : full ORCID URL, e.g. "https://orcid.org/0000-0000-0000-0000"
 #    theme     : sat | planning | moj | ai   (used to place the person card)
 #    advisings : list of works advised by Bruno (see below)
 #
@@ -38,6 +39,7 @@ advisor:
   name: "Bruno César Ribas"
   role: "Associate Professor, University of Brasília (FCTE, Gama)"
   github: "bcribas"
+  orcid: "https://orcid.org/0000-0001-6314-1511"
   lattes: "http://lattes.cnpq.br/6871745921667698"
   linkedin: "https://www.linkedin.com/in/bruno-ribas-41a051b3/"   # TODO: confirm
   scholar: "https://scholar.google.com/citations?user=pW_EVJoAAAAJ"
@@ -52,6 +54,7 @@ students:
     github: ""
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: sat
     advisings:
       - kind: tcc
@@ -64,6 +67,7 @@ students:
     github: "GabrielTiveron"                   # confirmed
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: sat
     advisings:
       - kind: ic
@@ -83,6 +87,7 @@ students:
     github: "Bumbleblo"                        # confirmed (PluSAT TCC author)
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: sat
     advisings:
       - kind: tcc
@@ -96,6 +101,7 @@ students:
     github: "lksgs0"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: sat
     advisings:
       - kind: tcc
@@ -108,6 +114,7 @@ students:
     github: "andrelucax"                       # confirmed
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: sat
     advisings:
       - kind: tcc
@@ -121,6 +128,7 @@ students:
     github: "LhTaira"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: sat
     advisings:
       - kind: tcc
@@ -133,6 +141,7 @@ students:
     github: "guilherme-puida"
     lattes: ""
     linkedin: "https://www.linkedin.com/in/guilherme-puida/"
+    orcid: ""
     theme: sat
     advisings:
       - kind: tcc
@@ -146,6 +155,7 @@ students:
     github: "mateusnr"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -158,6 +168,7 @@ students:
     github: "gdeusdara"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: ic
@@ -178,6 +189,7 @@ students:
     github: ""
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -190,6 +202,7 @@ students:
     github: ""
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -202,6 +215,7 @@ students:
     github: "SamButers"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -214,6 +228,7 @@ students:
     github: "RuanMoura"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -226,6 +241,7 @@ students:
     github: "RodrigoTCLima"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -238,6 +254,7 @@ students:
     github: "daniel-de-sousa"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: ic
@@ -251,6 +268,7 @@ students:
     github: "wagnermc506"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -263,6 +281,7 @@ students:
     github: "LucasBergholz"
     lattes: "https://lattes.cnpq.br/2254701491777732"
     linkedin: "https://www.linkedin.com/in/lucas-bergholz/"
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -275,6 +294,7 @@ students:
     github: "BrunoRiibeiro"                    # confirmed (bni contributor)
     lattes: "https://lattes.cnpq.br/0137300456623017"
     linkedin: "https://linkedin.com/in/brunoriibeiro"
+    orcid: ""
     theme: planning
     advisings:
       - kind: ic
@@ -294,6 +314,7 @@ students:
     github: "igorpenhaa"                       # confirmed (bni contributor)
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: ic
@@ -314,6 +335,7 @@ students:
     github: "lucianosz7"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: moj
     advisings:
       - kind: tcc
@@ -326,6 +348,7 @@ students:
     github: ""
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: moj
     advisings:
       - kind: tcc
@@ -338,6 +361,7 @@ students:
     github: ""
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: moj
     advisings:
       - kind: tcc
@@ -350,6 +374,7 @@ students:
     github: "DaviAntonio"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: moj
     advisings:
       - kind: ic
@@ -372,6 +397,7 @@ students:
     github: ""
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: ai
     advisings:
       - kind: msc
@@ -384,6 +410,7 @@ students:
     github: ""
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: ai
     advisings:
       - kind: msc
@@ -397,6 +424,7 @@ students:
     github: "Hunter104"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -415,6 +443,7 @@ students:
     github: "caio-felipee"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -427,6 +456,7 @@ students:
     github: "artrsousa1"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -439,6 +469,7 @@ students:
     github: "west7"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -451,6 +482,7 @@ students:
     github: "martinsglucas"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -463,6 +495,7 @@ students:
     github: "CADU110"
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: planning
     advisings:
       - kind: tcc
@@ -481,6 +514,7 @@ students:
     github: ""
     lattes: ""
     linkedin: ""
+    orcid: ""
     theme: sat
     advisings:
       - kind: tcc

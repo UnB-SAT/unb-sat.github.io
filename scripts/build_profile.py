@@ -60,8 +60,11 @@ def social_links(p: dict, sep: str = " &middot; ") -> str:
     gh = (p.get("github") or "").strip()
     lt = (p.get("lattes") or "").strip()
     li = (p.get("linkedin") or "").strip()
+    oc = (p.get("orcid") or "").strip()
     if gh:
         out.append(f'<a href="https://github.com/{gh}">GitHub</a>')
+    if oc:
+        out.append(f'<a href="{oc}">ORCID</a>')
     if lt:
         out.append(f'<a href="{lt}">Lattes</a>')
     if li:
@@ -221,7 +224,7 @@ def advisor_card(data: dict) -> str:
     )
     links = []
     for k, lbl in [
-        ("site", "Site"), ("scholar", "Scholar"), ("dblp", "DBLP"),
+        ("site", "Site"), ("orcid", "ORCID"), ("scholar", "Scholar"), ("dblp", "DBLP"),
         ("researchgate", "ResearchGate"), ("linkedin", "LinkedIn"),
         ("lattes", "Lattes"), ("github", "GitHub"),
     ]:

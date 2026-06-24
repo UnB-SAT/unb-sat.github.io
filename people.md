@@ -21,7 +21,7 @@ nav_order: 2
   <a href="https://www.brunoribas.com.br"><img src="https://github.com/bcribas.png?size=200" width="120" alt="Bruno César Ribas"/></a><br/>
   <b>Bruno César Ribas</b><br/>
   <sub>Associate Professor, University of Brasília (FCTE, Gama)</sub><br/>
-  <a href="https://www.brunoribas.com.br">Site</a> &middot; <a href="https://scholar.google.com/citations?user=pW_EVJoAAAAJ">Scholar</a> &middot; <a href="https://dblp.org/pid/121/4222">DBLP</a> &middot; <a href="https://www.researchgate.net/profile/Bruno-Ribas">ResearchGate</a> &middot; <a href="https://www.linkedin.com/in/bruno-ribas-41a051b3/">LinkedIn</a> &middot; <a href="http://lattes.cnpq.br/6871745921667698">Lattes</a> &middot; <a href="https://github.com/bcribas">GitHub</a>
+  <a href="https://www.brunoribas.com.br">Site</a> &middot; <a href="https://orcid.org/0000-0001-6314-1511">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=pW_EVJoAAAAJ">Scholar</a> &middot; <a href="https://dblp.org/pid/121/4222">DBLP</a> &middot; <a href="https://www.researchgate.net/profile/Bruno-Ribas">ResearchGate</a> &middot; <a href="https://www.linkedin.com/in/bruno-ribas-41a051b3/">LinkedIn</a> &middot; <a href="http://lattes.cnpq.br/6871745921667698">Lattes</a> &middot; <a href="https://github.com/bcribas">GitHub</a>
 </p>
 
 ### Advised students
