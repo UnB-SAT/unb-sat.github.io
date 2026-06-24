@@ -99,4 +99,4 @@ nav_order: 2
 
 ---
 
-The team is generated from [`data/students.yml`](https://github.com/UnB-SAT/.github/blob/main/data/students.yml) in the `UnB-SAT/.github` repository; run `scripts/build_profile.py` to update.
+The team is generated from [`data/students.yml`](https://github.com/UnB-SAT/unb-sat.github.io/blob/main/data/students.yml) in this repository; run `scripts/build_profile.py` to update.
