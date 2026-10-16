@@ -21,14 +21,19 @@ Grouped by research line. Co-authors who are or were our students are shown in
 [DBLP](https://dblp.org/pid/121/4222).
 
 #### SAT & Pseudo-Boolean
+- B. C. Ribas, R. A. N. R. Montaño, F. Silva, **G. Tiveron**. *A Neuro-Symbolic Framework for Logic Puzzle Solving: Pseudo-Boolean Reasoning with LLM-Based Explanations*. BRACIS, 2026. [DOI](https://doi.org/10.1007/978-3-032-39892-5_3), [code](https://github.com/UnB-SAT/grounded-padlock).
 - **G. Tiveron**, B. C. Ribas. *A Pseudo-Boolean Formulation for Graph Database Queries*. FLAIRS, 2026. [DOI](https://doi.org/10.32473/flairs.39.1.141833), [supplementary material](https://github.com/UnB-SAT/pb-graph-query).
 - B. C. Ribas, M. A. Castilho, F. Silva, R. M. Suguimoto, R. A. N. R. Montaño. *PBFVMC: A New Pseudo-Boolean Formulation to Virtual-Machine Consolidation*. BRACIS, 2013. [DOI](https://doi.org/10.1109/BRACIS.2013.41), [preprint](https://www.brunoribas.com.br/publicacoes/files/bracis-2013-pbfvmc.pdf).
 - B. C. Ribas, R. M. Suguimoto, R. A. N. R. Montaño, F. Silva, L. C. E. de Bona, M. A. Castilho. *On Modelling Virtual Machine Consolidation to Pseudo-Boolean Constraints*. IBERAMIA, 2012. [DOI](https://doi.org/10.1007/978-3-642-34654-5_37), [preprint](https://www.brunoribas.com.br/publicacoes/files/iberamia-2012-consolidation.pdf).
 - R. Tavares de Oliveira, F. Silva, B. C. Ribas, M. A. Castilho. *On Modeling Connectedness in Reductions from Graph Problems to Extended Satisfiability*. IBERAMIA, 2012. [DBLP](https://dblp.org/rec/conf/iberamia/OliveiraSRC12.html).
 
 #### Automated Planning
+- **L. G. Bergholz**, B. C. Ribas. *Planning-Based Game Development: A PDDL Approach to Gameplay Observability and Meta-Awareness*. SBGames, 2026. [SBC-OpenLib](https://sol.sbc.org.br/index.php/sbgames/article/view/45395), [code](https://github.com/LucasBergholz/GobbisGoblins).
+- B. C. Ribas, F. Silva. *A CNF-Style PDDL Encoding for Akari, and What It Costs*. EPIA, 2026 (proceedings in Springer LNAI, in press). [PDF](https://epia2026.web.uma.pt/PAPERS_EPIA26/paper_149.pdf), [code](https://github.com/UnB-SAT/akari-pddl).
+- B. C. Ribas, **A. E. B. da Silva**. *Modeling the Aquasplash Puzzle Game in PDDL*. EPIA, 2026 (proceedings in Springer LNAI, in press). [PDF](https://epia2026.web.uma.pt/PAPERS_EPIA26/paper_137.pdf), [code](https://github.com/UnB-SAT/aquasplash-pddl).
+- **A. G. de Mello**, B. C. Ribas. *Modeling Constrained Routing in PDDL: Lessons from 11 Independent Encodings*. EPIA, 2026 (proceedings in Springer LNAI, in press). [PDF](https://epia2026.web.uma.pt/PAPERS_EPIA26/paper_135.pdf), [code](https://github.com/UnB-SAT/modeling-constrained-routing-in-pddl).
 - B. C. Ribas, **I. e S. Penha**, **L. G. Bergholz**, **B. C. Ribeiro**. *Mojified Pacman: A Deterministic and Fully Observable Variant for PDDL Modeling Competitions*. KEPS workshop, ICAPS, 2025. [PDF](https://icaps25.icaps-conference.org/program/workshops/keps-papers/pacman.pdf).
-- **B. C. Ribeiro**, **I. e S. Penha**, B. C. Ribas. *bni: A PDDL to C compiler with integrated REPL for interactive testing*. ENIAC, 2025. [DOI](https://doi.org/10.5753/eniac.2025.13960).
+- **B. C. Ribeiro**, **I. e S. Penha**, B. C. Ribas. *bni: A PDDL to C compiler with integrated REPL for interactive testing*. ENIAC, 2025. [DOI](https://doi.org/10.5753/eniac.2025.13960), [code](https://github.com/UnB-SAT/bni).
 - R. A. N. R. Montaño, B. C. Ribas. *Planning as Mixed-Horn Formulas Satisfiability*. ENIAC, 2017. [ResearchGate](https://www.researchgate.net/publication/320270866_Planning_as_Mixed-Horn_Formulas_Satisfiability).
 
 #### CD-MOJ & Competitive Programming
