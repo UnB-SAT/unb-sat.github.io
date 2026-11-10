@@ -37,6 +37,9 @@ Grouped by research line. Co-authors who are or were our students are shown in
 - R. A. N. R. Montaño, B. C. Ribas. *Planning as Mixed-Horn Formulas Satisfiability*. ENIAC, 2017. [ResearchGate](https://www.researchgate.net/publication/320270866_Planning_as_Mixed-Horn_Formulas_Satisfiability).
 
 #### CD-MOJ & Competitive Programming
+- B. C. Ribas. *Da Subregional ao Pódio: Perfis de Editores em Dois Ciclos da Maratona SBC*. Revista Maratona SBC de Programação, SBC, 2026. [PDF](https://books-sol.sbc.org.br/index.php/sbc/catalog/view/212/950/2041).
+- B. C. Ribas. *Hardware das Sedes da Maratona SBC: Política, Realidade Brasileira e Panorama Latino-Americano*. Revista Maratona SBC de Programação, SBC, 2026. [PDF](https://books-sol.sbc.org.br/index.php/sbc/catalog/view/212/955/2046).
+- B. C. Ribas, D. de P. Porto, D. S. N. Nunes, E. A. da C. Júnior, G. N. Ramos, V. R. P. Borges. *UnB na Final Nacional da Maratona SBC: 2020-2025*. Revista Maratona SBC de Programação, SBC, 2026. [PDF](https://books-sol.sbc.org.br/index.php/sbc/catalog/view/212/959/2070).
 - **D. A. da Silva Santos**, B. C. Ribas. *Maratona Linux: a tale of upgrading from Ubuntu 20.04 to 22.04*. arXiv, 2025. [arXiv:2510.15263](https://arxiv.org/abs/2510.15263), [code](https://github.com/maratona-linux).
 - **L. G. Caldas**, B. C. Ribas. *Multi-Queue Scheduler for the CD-MOJ Platform*. ERAD-CO, 2024. [DOI](https://doi.org/10.5753/eradco.2024.4385).
 - B. C. Ribas, **W. B. Morais**. *Maratona-Linux: um ambiente para a Maratona de Programação*. Computer on the Beach, 2019. [ResearchGate](https://www.researchgate.net/publication/332247662_Maratona-Linux_um_ambiente_para_a_Maratona_de_Programacao), [code](https://github.com/maratona-linux).
